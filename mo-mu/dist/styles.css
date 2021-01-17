@@ -1,0 +1,338 @@
+body {
+  background-color: black;
+}
+
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  grid-template-areas: " v1  v1  v2  v2  v2  v3  v3  v4  v4  v5  v5  v6  v6  v6  v6  v7" " v8  v9  v9  v9  v9 v10 v10 v10 v11  v5  v5 v12 v12 v12 v13  v7" " v8  v9  v9  v9  v9 v10 v10 v10 v11  v5  v5 v12 v12 v12 v13  v7" " v8  v9  v9  v9  v9 v14 v14 v15 v11 v16 v16 v16 v17 v18 v13 v19" " v8  v9  v9  v9  v9 v14 v14 v15 v11 v20 v20 v21 v17 v18 v13 v19" "v22 v22 v22 v23 v23 v23 v23 v15 v24 v24 v24 v21 v25 v25 v25 v19" "v22 v22 v22 v26 v27 v28 v28 v28 v24 v24 v24 v21 v25 v25 v25 v19" "v22 v22 v22 v26 v27 v28 v28 v28 v24 v24 v24 v21 v25 v25 v25 v29" "v30 v31 v31 v31 v32 v32 v33 v33 v33 v34 v35 v35 v35 v36 v36 v29" "v30 v37 v37 v38 v38 v38 v33 v33 v33 v34 v39 v39 v39 v36 v36 v29" "v30 v40 v41 v38 v38 v38 v42 v43 v43 v34 v44 v45 v46 v46 v46 v46" "v30 v40 v41 v38 v38 v38 v42 v43 v43 v34 v44 v45 v46 v46 v46 v46" "v47 v47 v41 v38 v38 v38 v42 v43 v43 v48 v48 v48 v48 v49 v50 v50" "v47 v47 v51 v51 v51 v51 v42 v52 v52 v52 v53 v53 v53 v49 v50 v50";
+}
+
+.v6 {
+  font-size: 30px;
+  font-family: fantasy;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+.v9 {
+  color: white;
+}
+
+.v9,
+.v25,
+.v38 {
+  font-size: 24px;
+  padding: 10px;
+}
+
+.v53 {
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+  font-size: 14px;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+}
+
+.v9 a {
+  color: white;
+  margin-bottom: 0px;
+}
+
+.v25 a,
+.v38 a {
+  color: black;
+  margin-bottom: 0px;
+}
+
+.ul-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.v1,
+.v3,
+.v4,
+.v6,
+.v10,
+.v13,
+.v14,
+.v16,
+.v18,
+.v19,
+.v20,
+.v22,
+.v23,
+.v24,
+.v27,
+.v28,
+.v30,
+.v32,
+.v34,
+.v35,
+.v36,
+.v37,
+.v41,
+.v42,
+.v45,
+.v47,
+.v48,
+.v50,
+.v51,
+.v52,
+.v53 {
+  background-color: white;
+}
+
+.v2,
+.v12,
+.v15,
+.v21,
+.v29,
+.v31,
+.v33,
+.v44 {
+  background-color: red;
+}
+
+.v5,
+.v9,
+.v26,
+.v43,
+.v46 {
+  background-color: mediumblue;
+}
+
+.v7,
+.v8,
+.v11,
+.v17,
+.v38,
+.v39,
+.v40,
+.v49 {
+  background-color: gold;
+}
+
+.v25 {
+  background-color: green;
+}
+
+.v1 {
+  grid-area: v1;
+}
+
+.v2 {
+  grid-area: v2;
+}
+
+.v3 {
+  grid-area: v3;
+}
+
+.v4 {
+  grid-area: v4;
+}
+
+.v5 {
+  grid-area: v5;
+}
+
+.v6 {
+  grid-area: v6;
+}
+
+.v7 {
+  grid-area: v7;
+}
+
+.v8 {
+  grid-area: v8;
+}
+
+.v9 {
+  grid-area: v9;
+}
+
+.v10 {
+  grid-area: v10;
+}
+
+.v11 {
+  grid-area: v11;
+}
+
+.v12 {
+  grid-area: v12;
+}
+
+.v13 {
+  grid-area: v13;
+}
+
+.v14 {
+  grid-area: v14;
+}
+
+.v15 {
+  grid-area: v15;
+}
+
+.v16 {
+  grid-area: v16;
+}
+
+.v17 {
+  grid-area: v17;
+}
+
+.v18 {
+  grid-area: v18;
+}
+
+.v19 {
+  grid-area: v19;
+}
+
+.v20 {
+  grid-area: v20;
+}
+
+.v21 {
+  grid-area: v21;
+}
+
+.v22 {
+  grid-area: v22;
+}
+
+.v23 {
+  grid-area: v23;
+}
+
+.v24 {
+  grid-area: v24;
+}
+
+.v25 {
+  grid-area: v25;
+}
+
+.v26 {
+  grid-area: v26;
+}
+
+.v27 {
+  grid-area: v27;
+}
+
+.v28 {
+  grid-area: v28;
+}
+
+.v29 {
+  grid-area: v29;
+}
+
+.v30 {
+  grid-area: v30;
+}
+
+.v31 {
+  grid-area: v31;
+}
+
+.v32 {
+  grid-area: v32;
+}
+
+.v33 {
+  grid-area: v33;
+}
+
+.v34 {
+  grid-area: v34;
+}
+
+.v35 {
+  grid-area: v35;
+}
+
+.v36 {
+  grid-area: v36;
+}
+
+.v37 {
+  grid-area: v37;
+}
+
+.v38 {
+  grid-area: v38;
+}
+
+.v39 {
+  grid-area: v39;
+}
+
+.v40 {
+  grid-area: v40;
+}
+
+.v41 {
+  grid-area: v41;
+}
+
+.v42 {
+  grid-area: v42;
+}
+
+.v43 {
+  grid-area: v43;
+}
+
+.v44 {
+  grid-area: v44;
+}
+
+.v45 {
+  grid-area: v45;
+}
+
+.v46 {
+  grid-area: v46;
+}
+
+.v47 {
+  grid-area: v47;
+}
+
+.v48 {
+  grid-area: v48;
+}
+
+.v49 {
+  grid-area: v49;
+}
+
+.v50 {
+  grid-area: v50;
+}
+
+.v51 {
+  grid-area: v51;
+}
+
+.v52 {
+  grid-area: v52;
+}
+
+.v53 {
+  grid-area: v53;
+}

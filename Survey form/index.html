@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey</title>
+  <link rel="stylesheet" href="dist/styles.css">
+</head>
+<body>
+  <header>Survey Form</header>
+  <main class="container">
+    <!-- description of the survey-->
+    <p id="description">If you want to help some valuable research, you might consider filling out this survey form.</p>
+    <!-- form-element-->
+    <form id="survey-form" action="">
+      <div>
+        <!-- name-field -->
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Jan Janssen">
+      </div>
+      <div>
+        <!-- e-mail-field -->
+        <label id="email-label" for="email">Enter your email:</label>
+        <input required type="email" id="email" name="email" placeholder="name@xxx.org">
+      </div>
+      <div>
+        <!-- number-field -->
+        <label id="number-label" for="number">Number (between 1 and 10):</label>
+        <input type="number" id="number" name="number" min="1" max="10" placeholder="1-10">
+      </div>
+
+
+      <div class="container-of-choices">
+        <!-- dropdown-menu -->
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown</button>
+          <div class="dropdown-content">
+            <a href="alpha.html">Alpha</a>
+            <a href="bravo.html">Bravo</a>
+            <a href="charlie.html">Charlie</a>
+          </div>
+        </div>
+        <div>
+          <!-- radio buttons -->
+          <input type="radio" id="under18" name="age-class" value="under18">
+          <label for="under18">I am under 18 years old</label><br>
+
+          <input type="radio" id="from18upto65" name="age-class" value="from18upto65">
+          <label for="from18upto65">I am between 18 up to 65 years old</label><br>
+
+          <input type="radio" id="over65" name="age-class" value="over65">
+          <label for="over65">I am older than 65 years old</label>
+        </div>
+        <div>
+          <!-- checkboxes -->
+          <input type="checkbox" id="choice1" name="choice1" value="classical">
+          <label for="choice1">I like classical music</label><br>
+
+          <input type="checkbox" id="choice2" name="choice2" value="countrywestern">
+          <label for="choice2">I like country & western music </label><br>
+
+          <input type="checkbox" id="choice3" name="choice3" value="r-and-b">
+          <label for="choice3">I like rhythm&blues music</label><br>
+
+          <input type="checkbox" id="choice4" name="choice4" value="rock-and-roll">
+          <label for="choice1">I like rock-'n-roll music</label><br>
+
+          <input type="checkbox" id="choice5" name="choice5" value="techno-and-dance">
+          <label for="choice1">I like techno and dance music</label><br>
+
+          <input type="checkbox" id="choice6" name="choice6" value="other">
+          <label for="choice6">I like other music</label><br>
+        </div>
+      </div>
+
+      <div class="text-area">
+        <!-- textarea -->
+        <label for="text-area">Leave a message:</label>
+
+        <textarea id="text-area" name="text-area" rows="5" cols="60">Type here</textarea>
+      </div>
+      <div>
+        <!-- submit button -->
+        <button id="submit" type="submit" value="Submit">Submit</button>
+      </div>
+    </form>
+  </main>
+  <footer>created Oct. 25th, 2020</footer>
+</body>
+</html>

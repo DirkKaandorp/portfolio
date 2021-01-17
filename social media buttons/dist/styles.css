@@ -1,0 +1,65 @@
+body {
+  background-color: lightgray;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hoofd-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 0px;
+  padding: 0px;
+}
+
+/* formaat van de icoontjes */
+img {
+  width: 40px;
+  height: 40px;
+  margin: 0px;
+  padding: 0p;
+}
+
+/* grootte en achtergrondkleuren van de div's met icoontjes */
+.laptop {
+  width: 40px;
+  background-color: #e17b77;
+}
+
+.github {
+  width: 40px;
+  background-color: #333;
+}
+
+.twitter {
+  width: 40px;
+  background-color: #00aced;
+}
+
+.linkedin {
+  width: 40px;
+  background-color: #007bb6;
+}
+
+.facebook {
+  width: 40px;
+  background-color: #3b5998;
+}
+
+.laptop,
+.linkedin,
+.twitter,
+.github,
+.facebook {
+  transition: width 500ms cubic-bezier(0.43, 0.95, 0.62, 1.04);
+}
+
+.facebook:hover,
+.github:hover,
+.laptop:hover,
+.linkedin:hover,
+.twitter:hover {
+  width: 400px;
+}

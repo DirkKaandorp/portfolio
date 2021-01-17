@@ -1,0 +1,270 @@
+/* algemene instellingen */
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: white;
+  color: black;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 200px;
+}
+
+.contact {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  text-align: right;
+  background-color: bisque;
+  color: maroon;
+  padding: 30px;
+}
+
+.homepageknop,
+.verzendknop,
+.resetknop {
+  background-color: bisque;
+  color: brown;
+  padding: 16px;
+  font-size: 16px;
+  border: 2px solid brown;
+}
+
+.header > h1,
+.header > h2,
+.componist {
+  font-size: 1.5em;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+/* instellingen voor de body van de contact-pagina */
+.contactbody {
+  background-color: bisque;
+}
+
+/* instellingen van de CSS-grid-onderdelen */
+.header {
+  grid-area: h;
+  background-color: #c0894f;
+  color: white;
+  padding: 5px;
+}
+
+.menubalk {
+  grid-area: m;
+  background-color: #2c393e;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tekstvak {
+  display: grid;
+  grid-area: t;
+  background-color: #346778;
+  color: white;
+  padding: 10px;
+  line-height: 1.5em;
+}
+
+.synopsis {
+  display: grid;
+  grid-area: s;
+  background-color: #346778;
+  color: white;
+  padding: 5px;
+  line-height: 1.5em;
+}
+
+.componist {
+  display: grid;
+  grid-area: c;
+  background-color: #c0894f;
+  color: white;
+  padding: 5px;
+}
+
+.opera {
+  display: grid;
+  grid-area: o;
+  background-color: #c0894f;
+  color: white;
+  padding: 5px;
+  font-size: 1.5em;
+  font-variant: normal;
+  text-align: center;
+  font-style: italic;
+}
+
+.afbeelding {
+  grid-area: i;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #313542;
+  color: white;
+}
+
+.luisterfragment {
+  grid-area: l;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #c0894f;
+  color: white;
+}
+
+.luisterfragment > p {
+  padding: 20px;
+}
+
+.footer {
+  grid-area: f;
+  background-color: #79829c;
+  color: black;
+  padding: 5px;
+  text-align: center;
+}
+
+/* groter scherm */
+@media (min-width: 401px) {
+  .container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "h h h"
+      "m t i"
+      "f f f";
+  }
+
+  /* instellingen voor de CSS-grid van de componisten-pagina's */
+  .subcontainer {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "o o c c"
+      "m t t i"
+      "m s s s"
+      "m l l l"
+      "f f f f";
+  }
+
+  .menuknop {
+    width: 150px;
+    height: 100px;
+    background-color: #79829c;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 15px;
+    font-size: 24px;
+  }
+  .header,
+  .menubalk,
+  .tekstvak,
+  .afbeelding,
+  .footer {
+    border-radius: 0px;
+  }
+
+  .menubalk {
+    flex-basis: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .afbeelding {
+    flex-basis: 200px;
+  }
+
+  .tekstvak {
+    flex-basis: auto;
+  }
+}
+
+/* kleiner scherm */
+@media (max-width: 400px) {
+  .container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "h"
+      "m"
+      "t"
+      "i"
+      "f";
+  }
+
+  /* instellingen voor de CSS-grid van de componisten-pagina's */
+  .subcontainer {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+      "c"
+      "m"
+      "o"
+      "i"
+      "t"
+      "s"
+      "l"
+      "f";
+  }
+  .menuknop {
+    width: 90px;
+    height: 40px;
+    background-color: #79829c;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+
+  .header,
+  .componist,
+  .opera,
+  .synopsis,
+  .luisterfragment,
+  .menubalk,
+  .tekstvak,
+  .afbeelding,
+  .footer {
+    border-radius: 15px;
+  }
+
+  .menubalk {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,113 @@
+body {
+  background-color: black;
+}
+
+.adres-container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 2fr 4fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 5fr;
+  grid-template-areas:
+    "a1 a2 a3 a3 a3 a4 a5"
+    "a1 a2 a6 a7 a8 a4 a5"
+    "a1 a2 a9 a9 a10 a10 a10"
+    "a11 a11 a11 a11 a11 a11 a11";
+}
+
+.a1 {
+  font-size: 60px;
+  grid-area: a1;
+  background-color: red;
+}
+.a2 {
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  // padding-left: 80px;
+  padding-top: 10px;
+  grid-area: a2;
+  background-color: black;
+}
+.a3 {
+  font-size: 30px;
+  font-family: fantasy;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  grid-area: a3;
+  background-color: white;
+}
+.a4 {
+  grid-area: a4;
+  background-color: yellow;
+}
+.a5 {
+  grid-area: a5;
+  background-color: red;
+}
+.a6 {
+  grid-area: a6;
+  background-color: red;
+}
+
+.a7 {
+  grid-area: a7;
+  background-color: white;
+}
+
+.a8 {
+  grid-area: a8;
+  background-color: black;
+}
+
+.a9 {
+  grid-area: a9;
+  background-color: yellow;
+}
+
+.a10 {
+  grid-area: a10;
+  background-color: white;
+}
+
+.a11 {
+  padding-left: 200px;
+  grid-area: a11;
+  background-color: gainsboro;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: 2em;
+}
+
+.menubutton {
+  width: 100px;
+  height: 60px;
+  border: 2px black solid;
+  border-radius: 10px;
+  background-color: gainsboro;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 24px;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+th {
+  text-align: left;
+}
+
+p {
+  margin-top: 70px;
+}
+
+table,
+th,
+td {
+  font-size: 24px;
+  // border: 1px solid black;
+  // border-collapse: collapse;
+  padding: 10px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="contactbody">
+    <div class="contact">
+      <h1>Contactformulier</h1>
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>naam: <input type="text" name="naam" /></label>
+        </p>
+        <p>
+          <label>e-mail: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>telefoon: <input type="tel" name="telefoon" /></label>
+        </p>
+        <p>
+          geslacht:
+          <input type="radio" id="vrouw" name="geslacht" value="vrouw" />
+          <label for="vrouw">vrouw</label>
+          <input type="radio" id="man" name="geslacht" value="man" />
+          <label for="man">man</label>
+          <input type="radio" id="anders" name="geslacht" value="anders" />
+          <label for="anders">anders</label>
+          <input
+            type="radio"
+            id="zegikniet"
+            name="geslacht"
+            value="zegikniet"
+          />
+          <label for="zegikniet">zeg ik niet</label>
+        </p>
+        <p>
+          <textarea name="message" rows="10" cols="30">
+Hier kun je in 't kort iets over je favoriete opera vertellen of een vraag stellen.</textarea
+          >
+        </p>
+        <p>
+          <button class="resetknop" input type="reset" value="Wissen">
+            Wissen
+          </button>
+          <button class="verzendknop" input type="submit" value="Verzenden">
+            Verzenden
+          </button>
+        </p>
+      </form>
+      <nav>
+        <button class="homepageknop"><a href="index.html">Terug</a></button>
+      </nav>
+    </div>
+  </body>
+</html>

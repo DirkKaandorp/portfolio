@@ -1,0 +1,111 @@
+// styles for SurveyForm
+* {
+  --headerFontSize: 2.5rem;
+  --headerPadding: 0.5rem;
+  --footerFontSize: 0.8rem;
+  --footerPadding: 0.5rem;
+  }
+
+body {
+  background: #FFF8DC;
+  color: darkred;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+header {
+  background: maroon;
+  color: #FFF8DC;
+  font-size: var(--headerFontSize);
+  padding: var(--headerPadding);
+  text-align: center;
+}
+
+footer {
+  background: maroon;
+  color: #FFF8DC;
+  font-size: var(--footerFontSize);
+  padding: var(--footerPadding);
+  text-align: center;
+}
+
+.container {
+  background: white;
+  color: darkred;
+  font-size: 1rem;
+  padding: 20px;
+  height: calc(100vh - var(--headerFontSize) 
+           - (2 * var(--headerPadding))
+           - var(--footerFontSize) 
+           - (2 * var(--footerPadding)));
+  overflow-y: auto;
+}
+
+
+
+form > div {
+  margin-top: 25px;
+}
+
+
+.container-of-choices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color:darkred;
+  color: #FFF8DC;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color:  darkred;
+  opacity: 0.5;
+}
